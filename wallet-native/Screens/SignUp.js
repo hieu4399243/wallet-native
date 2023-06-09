@@ -11,16 +11,25 @@ import {
     KeyboardAvoidingView,
     ScrollView,
     Platform
-} from "react-native";
+} from "react-native"
+import { LinearGradient } from 'expo-linear-gradient'
 
+
+import { COLORS, SIZES, FONTS, icons, images }  from "../constansts";
 
 export default function SignUp() {
   return (
-    <View>
-      <Text>SignUp</Text>
-      <Text>Hieu</Text>
-    </View>
-  )
+    <KeyboardAvoidingView
+            behavior={Platform.OS === "ios" ? "padding" : null}
+            style={{ flex: 1 }}
+        >
+            <LinearGradient
+                colors={[COLORS.lime, COLORS.emerald]}
+                style={{ flex: 1 }}
+            >
+                
+            </LinearGradient>
+            
+        </KeyboardAvoidingView>
+  );
 }
-
-const styles = StyleSheet.create({})

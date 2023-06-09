@@ -1,12 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import Home from "./Home"
+import Scan from "./Scan"
+import SignUp from "./SignUp"
 
-export default function Index() {
-  return (
-    <View>
-      <Text>Index</Text>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({})
+export {
+    Home,
+    Scan,
+    SignUp
+};

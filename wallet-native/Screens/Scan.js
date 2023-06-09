@@ -8,5 +8,3 @@ export default function Scan() {
     </View>
   )
 }
-
-const styles = StyleSheet.create({})

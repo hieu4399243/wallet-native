@@ -17,9 +17,7 @@ import {
 export default function Home() {
   return (
     <View>
-      <Text>SignUp</Text>
+      <Text>Home</Text>
     </View>
   )
 }
-
-const styles = StyleSheet.create({})
