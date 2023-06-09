@@ -18,6 +18,7 @@ export default function SignUp() {
   return (
     <View>
       <Text>SignUp</Text>
+      <Text>Hieu</Text>
     </View>
   )
 }
