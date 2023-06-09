@@ -17,6 +17,10 @@ import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, SIZES, FONTS, icons, images } from "../constansts";
 
 export default function SignUp() {
+  
+  const [showPassword, setShowPassword] = React.useState(false)
+  
+  
   function renderHeader() {
     return (
       <TouchableOpacity
@@ -177,7 +181,7 @@ export default function SignUp() {
             placeholder="Enter Password"
             placeholderTextColor={COLORS.white}
             selectionColor={COLORS.white}
-            secureTextEntry={true}
+            secureTextEntry={!showPassword}
         />
         <TouchableOpacity
             style={{
@@ -187,10 +191,10 @@ export default function SignUp() {
                 height: 30,
                 width: 30
             }}
-            //onPress={() => setShowPassword(!showPassword)}
+            onPress={() => setShowPassword(!showPassword)}
         >
             <Image
-                source={icons.eye}
+                source={showPassword ? icons.disable_eye : icons.eye}
                 style={{
                     height: 20,
                     width: 20,
