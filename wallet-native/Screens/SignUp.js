@@ -16,7 +16,7 @@ import { LinearGradient } from "expo-linear-gradient";
 
 import { COLORS, SIZES, FONTS, icons, images } from "../constansts";
 
-export default function SignUp() {
+export default function SignUp({navigation}) {
   const [showPassword, setShowPassword] = React.useState(false);
 
   const [areas, setAreas] = React.useState([]);
@@ -249,7 +249,7 @@ export default function SignUp() {
             alignItems: "center",
             justifyContent: "center",
           }}
-          //onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Home")}
         >
           <Text style={{ color: COLORS.white, ...FONTS.h3 }}>Continue</Text>
         </TouchableOpacity>
